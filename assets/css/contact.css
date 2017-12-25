@@ -1,0 +1,273 @@
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline: none;
+}
+::-moz-placeholder {
+    color:  #08FDD8;
+    font-weight: 300;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color:  #08FDD8;
+    font-weight: 300;
+
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container {    
+    position: absolute;
+    margin-top: 10%;
+    right: 19%;
+}
+.contactform {    
+    background: #393939;
+    border-radius: 8px;
+    padding: 30px;
+}
+ .contactform input.form-fields,
+ .contactform button.form-fields,
+ .contactform textarea.form-fields {
+    padding: 0 0 0 40px;
+    display: block;
+    box-sizing: border-box;
+    width: 350px;
+    font-size: 16px;
+    background: #323232;
+    margin: 7px 0;
+    border: 1px solid #08FDD8;
+    color: #08FDD8;
+    opacity: 0.5;
+    min-height: 45px;
+    text-shadow: none;
+    position: relative;
+}
+ .contactform textarea.form-fields {
+    padding: 8px 40px;
+    resize: none;
+}
+
+ .contactform button.form-fields.button:hover {
+    background: #08FDD8;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+}
+
+ .contactform button.form-fields.button i {
+    margin-left:10x;
+}
+
+
+ .contactform label .cntfrmicn {
+    color: #16F1D4;
+    padding: 14px;
+    position: absolute;
+    z-index: 99;
+}
+
+
+
+@-moz-keyframes rotate_earth {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 205px -2px;
+ }
+ 100% {
+   background-position: 410px -2px;
+ }
+
+}
+
+@-webkit-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 205px -2px;
+ }
+ 100% {
+   background-position: 410px -2px;
+ }
+
+}
+
+@-ms-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 205px -2px;
+ }
+ 100% {
+   background-position: 410px -2px;
+ }
+
+}
+
+@-o-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 205px -2px;
+ }
+ 100% {
+   background-position: 410px -2px;
+ }
+
+}
+@keyframes "rotate_earth" {
+ 0% {
+    background-position: 0px -2px;
+ }
+ 50% {
+    background-position: 205px -2px;
+ }
+ 100% {
+    background-position: 410px -2px;
+ }
+
+}
+
+#earth_holder { 
+    position: absolute;
+    margin-top: 12%;
+    left: 17%;
+    padding: 30px;
+}
+
+#earth {
+    z-index: 2;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    background: url("../img/earth.jpg") 0px 0px;
+
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+
+
+
+    -webkit-animation: rotate_earth 40s linear infinite;
+    -moz-animation: rotate_earth 40s linear infinite;
+    -ms-animation: rotate_earth 40s linear infinite;
+    -o-animation: rotate_earth 40s linear infinite;
+    animation: rotate_earth 40s linear infinite;
+}
+
+ #earth_glow {
+    z-index: 4;  
+    box-shadow: 0 5px 35px rgba(8,253,216, 0.4);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+}
+
+
+
+    @media only screen and (max-width:480px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+        h1{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .earth, #earth_holder, #earth_glow, #earth { 
+            display: none;
+           
+        }
+        .container { 
+            top: 15%;
+            left: 3%;  
+            width: 94%;
+        }   
+        .contactform {
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .contactform input.form-fields,
+        .contactform button.form-fields,
+        .contactform textarea.form-fields {
+            font-size: 13px;
+            width: 100%;
+        }
+
+        
+    }
+
+    @media only screen and (min-width: 481px) and (max-width:768px){
+       h1{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .earth, #earth_holder { 
+           top: 45%;
+           z-index: 0; 
+           left: 25%;         
+        }
+        .container { 
+            top: 2%;
+            left: 10%;  
+            width: 80%;
+            z-index: 1;
+        }   
+        .contactform {
+            padding: 10px;
+                  
+        }
+
+        .contactform input.form-fields,
+        .contactform button.form-fields,
+        .contactform textarea.form-fields {
+            font-size: 14px;
+            width: 100%;
+        }
+      
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1224px){
+          h1{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .earth, #earth_holder { 
+            top: 10%;
+            left: 10%;
+            z-index: 0;           
+        }
+        .container { 
+            top: 14%;
+            right: 5%;
+            width: 40%;
+        }   
+        .contactform {
+            padding: 10px;
+                       
+        }
+
+        .contactform input.form-fields,
+        .contactform button.form-fields,
+        .contactform textarea.form-fields {
+            font-size: 14px;
+            width: 100%;
+        }
+     
+     }
+    /* different techniques for iPad screening */
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+     
+    }

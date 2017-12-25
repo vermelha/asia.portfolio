@@ -1,0 +1,264 @@
+.article_skills{
+  position: absolute;
+  display: block;
+  float: left;
+  top: 22%;
+  left: 12%;
+  color: #fff;
+   width: 30%;
+  background-color: rgba(34, 34, 34,.3);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.animation_skills{
+  position: absolute;
+  margin-top: 10%;
+  padding: 15px;
+  left: 66%;
+  height: 1px;
+}
+.butt {
+ 
+  position: relative;
+  width: 500px;
+  height: 35px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background-color: #df39fd;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.parallelogram { 
+  position: relative;
+  left: 50%;
+  width: 150px;
+  height: 35px;
+  margin-top: 15px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
+  background: #08FDD8;
+  box-shadow: 0 0px 15px rgba(8,253,216, 0.4);
+}
+
+#p2, #p6{
+  left: 35%;
+}
+#p3, #p5{
+  left: 20%;
+}
+#p4{
+  left: 5%;
+}
+
+#p8{
+  left: 60%;
+}
+
+
+.sBtn {
+  position: absolute;
+  width: 500px;
+  height: 35px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  border-radius: none;
+  background-color: #08FDD8;
+  cursor: pointer;
+  transition: all 0.28s;
+}
+
+.sBtn span {
+  width: 100%;
+  font: 23px 'Roboto Mono', monospace;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (max-width:480px){
+      .article_skills {
+        top: 10%;
+        left: 6%;        
+        width: 80%;
+        padding: 8px;
+        background-color: rgba(34, 34, 34,.6);
+      }
+      .animation_skills{
+        display: none;
+      }
+
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 590px){
+      .article_skills {
+        top: 7%;
+        left: 2%;         
+        width: 94%;
+        padding: 5px;
+        background-color: rgba(34, 34, 34,.6);
+      }
+      .animation_skills{
+        top: 40%;
+        left: 46%;
+      }
+      .butt { 
+        width: 400px;
+        height: 25px;     
+      }
+      .parallelogram {
+        width: 90px;
+        height: 25px;
+        
+      }     
+      .sBtn {
+        width: 400px;
+        height: 25px;
+      }
+
+      .sBtn span {
+        font: 16px 'Roboto Mono', monospace;
+      }
+    }
+    @media only screen and (min-width: 591px) and (max-width: 630px){
+      .article_skills {
+        top: 8%;
+        left: 4%;         
+        width: 90%;
+        padding: 5px;
+        background-color: rgba(34, 34, 34,.6);
+      }
+      .animation_skills{
+        top: 35%;
+        left: 46%;
+      }
+      .butt { 
+        width: 450px;
+        height: 27px;     
+      }
+      .parallelogram {
+        width: 110px;
+        height: 27px;
+        
+      }     
+      .sBtn {
+        width: 450px;
+        height: 27px;
+      }
+
+      .sBtn span {
+        font: 18px 'Roboto Mono', monospace;
+      }
+    
+    }
+     @media only screen and (min-width: 631px) and (max-width: 768px){
+      .article_skills {
+        top: 8%;
+        left: 4%;         
+        width: 90%;
+        padding: 5px;
+        background-color: rgba(34, 34, 34,.6);
+      }
+      .animation_skills{
+        top: 33%;
+        left: 46%;
+      }
+      .butt { 
+        width: 450px;
+        height: 27px;     
+      }
+      .parallelogram {
+        width: 110px;
+        height: 27px;
+        
+      }     
+      .sBtn {
+        width: 450px;
+        height: 27px;
+      }
+
+      .sBtn span {
+        font: 18px 'Roboto Mono', monospace;
+      }
+    
+    }
+
+
+    @media only screen and (min-width: 769px) and (max-width: 960px){
+     .article_skills {
+        top: 12%;
+        left: 10%;
+        width: 30%;
+      }
+      .animation_skills{
+        top: 5%;
+        right: 5%;
+      }
+      .butt { 
+        width: 390px;
+        height: 30px;     
+      }
+      .parallelogram {
+        width: 115px;
+        height: 30px;
+        
+      }     
+      .sBtn {
+        width: 390px;
+        height: 30px;
+      }
+
+      .sBtn span {
+        font: 20px 'Roboto Mono', monospace;
+      }
+    }
+    @media only screen and (min-width: 961px) and (max-width: 1224px){
+      h1{
+        font-size: 40px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+      }
+      .article_skills {
+          top: 20%;
+          left: 10%;
+          width: 30%;
+        }
+        .animation_skills{
+          top: 5%;
+          right: 3%;
+        }
+        .butt { 
+          width: 430px;
+          height: 30px;     
+        }
+        .parallelogram {
+          width: 115px;
+          height: 30px;
+          
+        }     
+        .sBtn {
+          width: 430px;
+          height: 30px;
+        }
+
+        .sBtn span {
+          font: 20px 'Roboto Mono', monospace;
+        }
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+     
+    }

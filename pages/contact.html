@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+function AjaxFormRequest(result_id,formMain,url) {
+   jQuery.ajax({
+      url:     url,
+      type:     "POST",
+      dataType: "html",
+      data: jQuery("#"+formMain).serialize(),
+      success: function(response) {
+         document.getElementById(result_id).innerHTML = response;
+      },
+      error: function(response) {
+         document.getElementById(result_id).innerHTML = "Sorry your message not sent, Try again Later.";
+      }
+    });
+    $(':input','#formMain')
+     .not(':button, :submit, :reset, :hidden')
+     .val('')
+     .removeAttr('checked')
+     .removeAttr('selected');
+    }
+</script>
+
+
+
+</head>
+<body>
+<div class="earth">
+    <div id="center" align="center">
+        <div id="earth_holder">
+                <div id="earth_ball"></div>
+                <div id="earth_glow"></div>
+                <div id="earth"></div>
+        </div> 
+</div>
+</div>
+
+
+<div class="container">
+   
+            <div class="contactform">
+            <div id="messegeResult">
+               <h1><span class="colorothertext">Get</span> in touch</h1>
+            </div>
+                <form  action="" method="POST" id="formMain" name="formMain">
+                    <label for="firstname">
+                        <i class="cntfrmicn fa fa-user"></i>
+                        <input name="firstname" class="form-fields" type="text">
+                    </label>
+                    <label for="email">
+                        <i class="cntfrmicn fa fa-envelope"></i>
+                        <input name="email" class="form-fields" type="email">
+                    </label>
+                    <label for="textarea">
+                        <i class="cntfrmicn fa fa-comment"></i>
+                        <textarea class="form-fields" name="textarea" id="" rows="6"></textarea>
+                    </label>
+                    <button class="form-fields button" value="Send" type="submit" onclick="AjaxFormRequest('messegeResult', 'formMain', 'send.php')">Send <i class="fa fa-paper-plane"></i></button>
+                    
+                </form>
+            </div>
+     
+              
+     
+
+    </div>
+    <script src="assets/js/contact_animation.js"></script>
+
+</body>
+</html>

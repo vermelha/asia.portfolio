@@ -1,5 +1,5 @@
 <?php
-if(!empty($_POST['telephone'] ))
+if($_POST)
 {
 $to = "anastasiyatsyplya@gmail.com";
 $from = 'email';
@@ -18,4 +18,3 @@ $result = mail($to, $subject, $message, $headers);
 }
 
 ?>
-

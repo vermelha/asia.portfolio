@@ -3,7 +3,28 @@
 <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<meta name="referrer" content="origin">
+<script>
+function AjaxFormRequest(result_id,formMain,url) {
+   jQuery.ajax({
+      url:     url,
+      type:     "POST",
+      dataType: "html",
+      data: jQuery("#"+formMain).serialize(),
+      success: function(response) {
+         document.getElementById(result_id).innerHTML = response;
+      },
+      error: function(response) {
+         document.getElementById(result_id).innerHTML = "Sorry your message not sent, Try again Later.";
+      }
+    });
+    $(':input','#formMain')
+     .not(':button, :submit, :reset, :hidden')
+     .val('')
+     .removeAttr('checked')
+     .removeAttr('selected');
+    }
+</script>
+
 
 
 </head>
@@ -25,7 +46,7 @@
             <div id="messegeResult">
                <h1><span class="colorothertext">Get</span> in touch</h1>
             </div>
-                <form  method="POST" action="http://formspree.io/anastasiyatsyplya@gmail.com" id="formMain" name="formMain">
+                <form  method="POST" action="" id="formMain" name="formMain">
                     <label for="firstname">
                         <i class="cntfrmicn fa fa-user"></i>
                         <input name="firstname" class="form-fields" type="text">
@@ -38,14 +59,12 @@
                         <i class="cntfrmicn fa fa-comment"></i>
                         <textarea class="form-fields" name="textarea" id="" rows="6"></textarea>
                     </label>
-                    <button class="form-fields button" value="Send" type="submit">Send <i class="fa fa-paper-plane"></i></button>
+                    <button class="form-fields button" value="Send" type="submit"  onclick="AjaxFormRequest('messegeResult', 'formMain', 'zakaz.php')"/>Send <i class="fa fa-paper-plane"></i></button>
                     
                 </form>
             </div>
      
-              
-     
-
+      
     </div>
     <script src="assets/js/contact_animation.js"></script>
 

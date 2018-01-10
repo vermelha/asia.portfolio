@@ -43,7 +43,7 @@ p {
 .colorothertext {
   color: #df39fd;
 }
-button {
+button, .button {
   margin-top: 25px;
   padding: 10px 25px 10px 25px;
   border: 2px solid #08FDD8;
@@ -53,7 +53,11 @@ button {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0px 35px rgba(8, 253, 216, 0.4);
 }
-button:hover {
+input, a{
+ text-decoration: none;
+ outline:none;
+}
+button:hover, .button:hover {
   background: rgba(8, 253, 216, 0.3);
 }
 #background_animation {

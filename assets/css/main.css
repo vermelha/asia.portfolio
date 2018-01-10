@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700');
 /*blue-green*/
+
 /* #08FDD8;*/
+
 /*rgba(8,253,216, 1);*/
 
 /*#df39fd*/
+
 /*rgba(219,32,253, 1);*/
 
-
 body, html {
-	font-family: 'Roboto';
-	height: 100vh;
+  font-family: 'Roboto';
+  height: 100vh;
   min-width: 1200px;
   background-color: #333;
   -webkit-user-select: none;
@@ -20,40 +22,39 @@ body, html {
   padding: 0;
   overflow: hidden;
 }
-
-h1{
-	font-family: 'Roboto Mono', monospace;
-	font-size: 50px;
-	font-weight: 600;
-	margin: 0 auto;
-	text-align: left;
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: left;
   color: #fff;
 }
 p {
-	font-size: 16px;
-	letter-spacing: 2px;
-	font-weight: 300;
-	margin: 15px 0 0 0;
-	text-align: left;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 15px 0 0 0;
+  text-align: left;
 }
 .colortext {
   color: #08FDD8;
 }
-.colorothertext{
+.colorothertext {
   color: #df39fd;
 }
 button {
-	margin-top: 25px;
-	padding: 10px 25px 10px 25px;
-	border: 2px solid #08FDD8;
-	color: #fff;
-	border-radius: 4px;
-	text-transform: uppercase;
-	background:rgba(0,0,0,0.3);
-  box-shadow: 0 0px 35px rgba(8,253,216, 0.4);
+  margin-top: 25px;
+  padding: 10px 25px 10px 25px;
+  border: 2px solid #08FDD8;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 35px rgba(8, 253, 216, 0.4);
 }
 button:hover {
-	background:rgba(8,253,216,0.3);
+  background: rgba(8, 253, 216, 0.3);
 }
 #background_animation {
   position: fixed;
@@ -81,9 +82,9 @@ button:hover {
   margin-top: 70vh;
   z-index: 1000;
 }
-.navbar li{
-  list-style-type: none; 
-  margin-left: 0; 
+.navbar li {
+  list-style-type: none;
+  margin-left: 0;
   padding-left: 0;
 }
 .navbar li a {
@@ -93,7 +94,7 @@ button:hover {
   background: #222;
   border-bottom: 1px solid #333;
   border-radius: 4px;
-  font: 16px/16px  'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font: 16px/16px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   padding: 10px;
@@ -103,12 +104,12 @@ button:hover {
 }
 .navbar li a:hover {
   background: #08FDD8;
-  box-shadow: 0 0px 15px rgba(8,253,216, 0.3);
+  box-shadow: 0 0px 15px rgba(8, 253, 216, 0.3);
 }
 .icon:hover {
   width: 75px;
- }
-.banner{
+}
+.banner {
   position: absolute;
   display: block;
   top: 25%;
@@ -123,12 +124,12 @@ button:hover {
   top: 21%;
   right: 15%;
   color: #fff;
-   width: 35%;
-  background-color: rgba(34, 34, 34,.3);
+  width: 35%;
+  background-color: rgba(34, 34, 34, .3);
   padding: 25px;
   border-radius: 8px;
 }
-.animation{
+.animation {
   position: absolute;
   display: block;
   height: 1px;
@@ -143,156 +144,149 @@ button:hover {
 .pineapple img {
   height: 800px;
 }
+@media only screen and (max-width:480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 13px;
+  }
+  .top_navbar {
+    width: 110%;
+    position: absolute;
+    height: 30px;
+    top: -2vh;
+    margin: 0 auto;
+  }
+  .bottom_navbar {
+    position: absolute;
+    margin-top: 90vh;
+  }
+  .navbar li a {
+    float: left;
+    margin-left: 1%;
+    height: 17px;
+    width: 26px;
+    font: 15px/15px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  }
+  .icon:hover {
+    max-width: 44px;
+    height: 30px;
+  }
+  .banner {
+    left: 5%;
+    width: 70%;
+  }
+  .pineapple {
+    top: 23%;
+    width: 65%;
+  }
+  .pineapple img {
+    height: 550px;
+  }
+  .article {
+    top: 10%;
+    left: 6%;
+    width: 80%;
+    padding: 10px;
+    background-color: rgba(34, 34, 34, .6);
+  }
+  .animation {
+    top: 43%;
+    left: 40%;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  h1 {
+    font-size: 38px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+  }
+  .top_navbar {
+    width: 110%;
+    position: absolute;
+    top: -2vh;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .bottom_navbar {
+    position: absolute;
+    margin-top: 90vh;
+  }
+  .navbar li a {
+    height: 18px;
+    width: 28px;
+    float: left;
+    margin-left: 1%;
+  }
+  .bottom_navbar li a {
+    margin-left: 2%;
+  }
+  .icon:hover {
+    max-width: 50px;
+    height: 30px;
+  }
+  .banner {
+    left: 5%;
+    width: 70%;
+  }
+  .pineapple {
+    top: 15%;
+    width: 55%;
+  }
+  .pineapple img {
+    height: 600px;
+  }
+  .article {
+    top: 10%;
+    left: 7%;
+    width: 80%;
+    padding: 15px;
+    background-color: rgba(34, 34, 34, .6);
+  }
+  .animation {
+    top: 40%;
+    left: 45%;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1224px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+  }
+  .banner {
+    left: 18%;
+    width: 70%;
+  }
+  .pineapple {
+    top: 15%;
+    width: 50%;
+  }
+  .pineapple img {
+    height: 650px;
+  }
+  .article {
+    top: 20%;
+    right: 5%;
+    width: 40%;
+  }
+  .animation {
+    top: 23%;
+    left: 25%;
+  }
+}
+/* different techniques for iPad screening */
 
-   
-    
-    @media only screen and (max-width:480px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
-      h1{
-        font-size: 30px;
-        font-weight: 400;
-      }
-      p {
-        font-size: 13px;
-      }
-     .top_navbar {
-        width: 110%;
-        position: absolute;
-        height: 30px;
-        top: -2vh;
-        margin: 0 auto;
-      }
-      .bottom_navbar {
-        position: absolute;
-        margin-top: 90vh;
-      }
-      .navbar li a {
-        float: left;
-        margin-left: 1%;
-        height: 17px;
-        width: 26px;
-        font: 15px/15px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
-      }
-      .icon:hover {
-        max-width: 44px;
-        height: 30px;
-       }
-      .banner{
-        left: 5%;
-        width: 70%;
-      }
-      .pineapple {
-        top: 23%;
-        width: 65%;
-      }
-      .pineapple img {
-        height: 550px;
-      }
-      .article {
-        top: 10%;
-        left: 6%;        
-        width: 80%;
-        padding: 10px;
-        background-color: rgba(34, 34, 34,.6);
-      }
-      .animation{
-        top: 43%;
-        left: 40%;
-        z-index: -1;
-      }
-    }
-
-    @media only screen and (min-width: 481px) and (max-width:768px){
-      h1{
-        font-size: 38px;
-        font-weight: 500;
-      }
-      p {
-        font-size: 14px;
-      }
-     .top_navbar {
-        width: 110%;
-        position: absolute;
-        top: -2vh; 
-        height: 30px;
-        margin: 0 auto;
-      }
-      .bottom_navbar {
-        position: absolute;
-        margin-top: 90vh;
-      }
-      .navbar li a{
-        height: 18px;
-        width: 28px;
-        float: left;
-        margin-left: 1%;
-      }
-      .bottom_navbar li a{
-        margin-left: 2%; 
-      }
-      .icon:hover {
-        max-width: 50px;
-        height: 30px;
-       }
-      .banner{
-        left: 5%;
-        width: 70%;
-      }
-      .pineapple {
-        top: 15%;
-        width: 55%;
-      }
-      .pineapple img {
-        height: 600px;
-      }
-      .article {
-        top: 10%;
-        left: 7%;        
-        width: 80%;
-        padding: 15px;
-        background-color: rgba(34, 34, 34,.6);
-      }
-      .animation{
-        top: 40%;
-        left: 45%;
-        z-index: -1;
-      }
-    }
-
-    @media only screen and (min-width: 769px) and (max-width: 1224px){
-      h1{
-        font-size: 40px;
-        font-weight: 500;
-      }
-      p {
-        font-size: 14px;
-      }
-      .banner{
-        left: 18%;
-        width: 70%;
-      }
-      .pineapple {
-        top: 15%;
-        width: 50%;
-      }
-      .pineapple img {
-        height: 650px;
-      }
-      .article {
-        top: 20%;
-        right: 5%;
-        width: 40%;
-      }
-      .animation{
-        top: 23%;
-        left: 25%;
-      }
-    }
-    /* different techniques for iPad screening */
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
-      /* For portrait layouts only */
-    }
-
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
-     
-    }
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {}

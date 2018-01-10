@@ -1,18 +1,17 @@
 a, a:hover, a:active {
- text-decoration: none;
- outline: none;
-  
+  text-decoration: none;
+  outline: none;
 }
 a {
   color: #fff;
 }
-a:hover{
-  color:  #08FDD8;
+a:hover {
+  color: #08FDD8;
 }
-img{
+img {
   border: none;
 }
-h2{
+h2 {
   text-transform: uppercase;
 }
 .grid {
@@ -20,9 +19,7 @@ h2{
   margin-top: 5%;
   max-width: 1000px;
   max-height: 1px;
-
 }
-
 .grid--item {
   position: relative;
   display: inline-block;
@@ -32,19 +29,14 @@ h2{
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-
 .grid--item:before {
   display: block;
   padding: 53.5%;
   content: '';
 }
-
-
-
 .grid--item:nth-last-child(2) {
   margin-left: 18%;
 }
-
 .img {
   position: absolute;
   top: 0;
@@ -54,22 +46,29 @@ h2{
   overflow: hidden;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-   animation: city 30s linear infinite;
-    -webkit-animation: city 30s linear infinite;
-   }
-   @keyframes city {
-    from { background-position: -1000px 100%, 120% 30%, 120% 15%, 0 0;}
-    to { background-position: 0 100%, -200% 10%, -50% 15%, 0 0; }
-   }
-   @-webkit-keyframes city {
-    from { background-position: -1000px 100%, 120% 30%, 120% 15%, 0 0;}
-    to { background-position: 0 100%, -200% 10%, -50% 15%, 0 0; }
-   }
+  animation: city 30s linear infinite;
+  -webkit-animation: city 30s linear infinite;
+}
+@keyframes city {
+  from {
+    background-position: -1000px 100%, 120% 30%, 120% 15%, 0 0;
+  }
+  to {
+    background-position: 0 100%, -200% 10%, -50% 15%, 0 0;
+  }
+}
+@-webkit-keyframes city {
+  from {
+    background-position: -1000px 100%, 120% 30%, 120% 15%, 0 0;
+  }
+  to {
+    background-position: 0 100%, -200% 10%, -50% 15%, 0 0;
+  }
+}
 }
 .img:hover {
-   animation-play-state: paused;
+  animation-play-state: paused;
 }
-
 .img:before, .img:after {
   position: absolute;
   top: 0;
@@ -80,13 +79,9 @@ h2{
   opacity: 0;
   transition: opacity 0.5s;
 }
-
 .img:before {
   background: #df39fd;
-
 }
-
-
 .container {
   position: absolute;
   top: 50%;
@@ -102,107 +97,83 @@ h2{
   -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-
-.grid--item:hover .img:before,
-.grid--item:hover .img:after,
-.grid--item:hover .container {
+.grid--item:hover .img:before, .grid--item:hover .img:after, .grid--item:hover .container {
   opacity: 1;
 }
-
 .grid--item:hover .container {
   transform: translate(-50%, -50%) scale(1);
-   animation-play-state: paused;
+  animation-play-state: paused;
 }
-
-
-
-
- @media only screen and (max-width:480px){
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
-         h2{
-            font-size: 14px;
-            font-weight: 500;
-        }
-        a {
-          font-size: 11px;
-        }
-        .grid {
-          margin: 17% 5%;
-        }
-       .grid--item {
-          width: 39%;
-           margin: 1%;
-        }
-        
-        .grid--item:nth-last-child(3) {
-           margin-left: 10%;
-        }
-        .grid--item:nth-last-child(2) {
-          margin-left: 1%;
-        }
-        .grid--item:nth-last-child(1) {
-          margin-left: 28%;
-        }
-
-
-
+@media only screen and (max-width:480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
   }
-
-    @media only screen and (min-width: 481px) and (max-width:768px){
-       h2{
-            font-size: 18px;
-            font-weight: 500;
-        }
-        a {
-          font-size: 12px;
-        }
-        .grid {
-          margin: 15% auto;
-          max-width: 900px;
-          max-height: 1px;
-
-        }
-        .grid--item {
-          width: 28%;
-           margin: 1%;
-        }
-        
-        .grid--item:nth-last-child(2) {
-           margin-left: 16%;
-        }
-      
-       
-      
-    }
-
-    @media only screen and (min-width: 769px) and (max-width: 1224px){
-        h2{
-            font-size: 20px;
-            font-weight: 500;
-        }
-        a {
-          font-size: 12px;
-        }
-
-        .grid {
-          margin: 5% auto;
-          max-width: 800px;
-          max-height: 1px;
-
-        }
-        .grid--item {
-          width: 27%;
-        }
-        .grid--item:nth-last-child(2) {
-  margin-left: 16%;
+  a {
+    font-size: 11px;
+  }
+  .grid {
+    margin: 17% 5%;
+  }
+  .grid--item {
+    width: 39%;
+    margin: 1%;
+  }
+  .grid--item:nth-last-child(3) {
+    margin-left: 10%;
+  }
+  .grid--item:nth-last-child(2) {
+    margin-left: 1%;
+  }
+  .grid--item:nth-last-child(1) {
+    margin-left: 28%;
+  }
 }
-        
-     }
-    /* different techniques for iPad screening */
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
-      /* For portrait layouts only */
-    }
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 12px;
+  }
+  .grid {
+    margin: 15% auto;
+    max-width: 900px;
+    max-height: 1px;
+  }
+  .grid--item {
+    width: 28%;
+    margin: 1%;
+  }
+  .grid--item:nth-last-child(2) {
+    margin-left: 16%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1224px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 12px;
+  }
+  .grid {
+    margin: 5% auto;
+    max-width: 800px;
+    max-height: 1px;
+  }
+  .grid--item {
+    width: 27%;
+  }
+  .grid--item:nth-last-child(2) {
+    margin-left: 16%;
+  }
+}
+/* different techniques for iPad screening */
 
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
-     
-    }
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {}

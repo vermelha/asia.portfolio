@@ -2,19 +2,14 @@
 //     var x = e.pageX,
 //         y = e.pageY,
 //         w = $(window).width()/2;
-
 //     if(x > w){
 //       var dir = "right"
 //       } else if(x < w){
 //         var dir = "left"
 //         }
-
 //     console.log(dir);
-
-
 // });
 particlesJS("background_animation", {
-
   "particles": {
     "number": {
       "value": 150,
@@ -34,7 +29,6 @@ particlesJS("background_animation", {
       "polygon": {
         "nb_sides": 6
       },
-     
     },
     "opacity": {
       "value": 1,
@@ -78,25 +72,19 @@ particlesJS("background_animation", {
       }
     }
   },
-
-
-
   "interactivity": {
     "detect_on": "canvas",
-
     "events": {
       "onhover": {
         "enable": true,
         "mode": "grab"
       },
-
       "onclick": {
         "enable": true,
         "mode": "remove"
       },
       "resize": true
     },
-
     "modes": {
       "grab": {
         "distance": 140,
@@ -111,16 +99,13 @@ particlesJS("background_animation", {
         "opacity": 1,
         "speed": 3
       },
-
       "repulse": {
         "distance": 200,
         "duration": 0.5
       },
-
       "push": {
         "particles_nb": 5
       },
-
       "remove": {
         "particles_nb": 2
       }

@@ -29,28 +29,18 @@
 }
 .parallelogram {
   position: relative;
-  left: 50%;
-  width: 150px;
+  width: 80px;
   height: 35px;
   margin-top: 15px;
+  border-radius: 4px;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
   background: #08FDD8;
   box-shadow: 0 0px 15px rgba(8, 253, 216, 0.4);
+  
 }
-#p2, #p6 {
-  left: 35%;
-}
-#p3, #p5 {
-  left: 20%;
-}
-#p4 {
-  left: 5%;
-}
-#p8 {
-  left: 60%;
-}
+
 .sBtn {
   position: absolute;
   width: 500px;
@@ -94,7 +84,7 @@
     background-color: rgba(34, 34, 34, .6);
   }
   .animation_skills {
-    top: 40%;
+    top: 50%;
     left: 46%;
   }
   .butt {

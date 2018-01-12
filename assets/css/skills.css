@@ -63,7 +63,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:499px) {
   .article_skills {
     top: 10%;
     left: 6%;
@@ -75,7 +75,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 590px) {
+@media only screen and (min-width: 500px) and (max-width: 590px) {
   .article_skills {
     top: 7%;
     left: 2%;
@@ -84,7 +84,7 @@
     background-color: rgba(34, 34, 34, .6);
   }
   .animation_skills {
-    top: 50%;
+    top: 45%;
     left: 46%;
   }
   .butt {
@@ -112,7 +112,7 @@
     background-color: rgba(34, 34, 34, .6);
   }
   .animation_skills {
-    top: 35%;
+    top: 40%;
     left: 46%;
   }
   .butt {
@@ -140,7 +140,7 @@
     background-color: rgba(34, 34, 34, .6);
   }
   .animation_skills {
-    top: 33%;
+    top: 36%;
     left: 46%;
   }
   .butt {
@@ -166,23 +166,24 @@
     width: 30%;
   }
   .animation_skills {
+  	padding-left: 5px;
     top: 5%;
-    right: 5%;
+    left: 70%;
   }
   .butt {
-    width: 390px;
+    width: 400px;
     height: 30px;
   }
   .parallelogram {
-    width: 115px;
+    width: 60px;
     height: 30px;
   }
   .sBtn {
-    width: 390px;
+    width: 100px;
     height: 30px;
   }
   .sBtn span {
-    font: 20px 'Roboto Mono', monospace;
+    font: 19px 'Roboto Mono', monospace;
   }
 }
 @media only screen and (min-width: 961px) and (max-width: 1224px) {

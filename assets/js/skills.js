@@ -17,20 +17,20 @@ button.mouseenter (function() {
 
 $('.parallelogram').each(function setAnim(){
     $('#p1, #p8').
-            animate({left: '70%'},500).
-            animate({ left: '5%',},500,setAnim);
+            animate({left: '70%'},1500).
+            animate({ left: '5%',},1500,setAnim);
     $('#p2, #p7').
-            animate({left: '60%'},500).
-            animate({ left: '5%',},500,setAnim);
+            animate({left: '60%'},1500).
+            animate({ left: '5%',},1500,setAnim);
      $('#p3, #p6').
-            animate({left: '40%'},500).
-            animate({ left: '5%',},500,setAnim);
+            animate({left: '40%'},1500).
+            animate({ left: '5%',},1500,setAnim);
      $('#p4').
-            animate({left: '80%'},500).
-            animate({ left: '5%',},500,setAnim);
+            animate({left: '80%'},1500).
+            animate({ left: '5%',},1500,setAnim);
      $('#p5').
-            animate({left: '30%'},500).
-            animate({ left: '5%',},500,setAnim);         
+            animate({left: '30%'},1500).
+            animate({ left: '5%',},1500,setAnim);         
 });
 
 
